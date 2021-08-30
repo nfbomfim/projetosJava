@@ -14,7 +14,7 @@ public class TestaMetodo {
 		System.out.println("=====  Canal de Transmissão  ====");
 		System.out.println(canal.getCodigoCanal());
 		System.out.println(canal.getNomeCanal());
-		System.out.println(canal.getCanalOn());
+		System.out.println(canal.getStatusCanal());
 		
 		Empresa fornecedor = new Empresa(13, "Canuto Nunes Serv Med Ltda", "17394201000101", "1111111111111");
 		System.out.println("=====  Fornecedor  ====");
@@ -42,8 +42,16 @@ public class TestaMetodo {
 		System.out.println("Canal: " + parceria.getCanal().getNomeCanal());
 		System.out.println(parceria.getStatusParceria());
 		
-		
-		
+//		filialEmpresa.desativa();
+//		System.out.println(filialEmpresa.getCodigoCnpj());
+//		System.out.println(filialEmpresa.getSituacaoEmpresa());
+//
+//		Empresa f1 = new Empresa(13, "Canuto Nunes Serv Med Ltda", "88888888000101", "3333333333333");
+//		Empresa f2 = new Filial(13, "Canuto Nunes Serv Med Ltda", "88888888000202", "4444444444444", fornecedor);
+//
+//		DesativaEmpresa desatEmp = new DesativaEmpresa();
+//		desatEmp.desativa(f2);
+//		desatEmp.desativa(f1);
 	}
 
 }

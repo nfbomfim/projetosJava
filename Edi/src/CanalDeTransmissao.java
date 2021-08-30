@@ -3,12 +3,12 @@ public class CanalDeTransmissao {
 
 	private int codigoCanal;
 	private String nomeCanal;
-	private Boolean canalOn;
+	private Status statusCanal;
 	
 	public CanalDeTransmissao(int codigoCanal, String nomeCanal) {
 		this.codigoCanal = codigoCanal;
 		this.nomeCanal = nomeCanal;
-		this.canalOn = true;
+		this.statusCanal = Status.LIGADO;
 	}
 	
 	public void altera(int codigoCanal, String nomeCanal) {
@@ -16,8 +16,7 @@ public class CanalDeTransmissao {
 	}
 	
 	public void desativa(int codigoCanal) {
-		this.canalOn = false;
-		
+		this.statusCanal = Status.DESLIGADO;	
 	}
 	
 	public int getCodigoCanal() {
@@ -28,8 +27,8 @@ public class CanalDeTransmissao {
 		return this.nomeCanal;
 	}
 
-	public Boolean getCanalOn() {
-		return this.canalOn;
+	public Status getStatusCanal() {
+		return this.statusCanal;
 	}
 
 

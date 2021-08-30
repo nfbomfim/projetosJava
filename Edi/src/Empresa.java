@@ -7,6 +7,10 @@ public class Empresa {
 	private String codigoGln;
 	private String situacaoEmpresa;
 	
+//	public Empresa() {
+//		
+//	}
+	
 	public Empresa(int codigoEmpresa, String nomeEmpresa, String codigoCnpj, String codigoGln) {
 		setCodigoEmpresa(codigoEmpresa);
 		setNomeEmpresa(nomeEmpresa);
@@ -40,9 +44,9 @@ public class Empresa {
 	}
 
 	public String getCodigoGln() {
-		return this.codigoGln;
+		return this.codigoCnpj;
 	}
-
+	
 	public String getSituacaoEmpresa() {
 		return this.situacaoEmpresa;
 	}
@@ -68,5 +72,12 @@ public class Empresa {
 	}
 
 	
+	protected Filial filialEmpresa;
+
+	public String filiaisDaEmpresa() {
+		return filialEmpresa.getCodigoGln();
+		
+	}
+
 }
 
